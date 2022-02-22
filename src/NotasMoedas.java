@@ -6,11 +6,11 @@ public class NotasMoedas {
         Locale.setDefault(Locale.US);
         Scanner scan = new Scanner(System.in);
 
-        float valor;
+        double valor;
         int[] cedulas = {100, 50, 20, 10, 5, 2};
         int[] moedas = {100, 50, 25, 10, 5, 1};
         int resto, quociente;
-        valor = scan.nextFloat();
+        valor = scan.nextDouble();
 
         resto = (int) (valor * 100 + 5);
 
@@ -29,6 +29,5 @@ public class NotasMoedas {
         }
         scan.close();
     }
-
 }
 
