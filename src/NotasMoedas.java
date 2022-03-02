@@ -15,14 +15,14 @@ public class NotasMoedas {
         resto = (int) (valor * 100 + 5);
 
         System.out.println("NOTAS:");
-        for (double cedula : cedulas) {
+        for (float cedula : cedulas) {
             quociente = (int) (resto / (cedula * 100));
             System.out.printf(quociente + " nota(s) de R$ %.2f%n", cedula);
             resto %= (cedula * 100);
         }
 
         System.out.println("MOEDAS:");
-        for (double moeda : moedas) {
+        for (float moeda : moedas) {
             quociente = (int) (resto / moeda);
             System.out.printf(quociente + " moedas(s) de R$ %.2f%n", moeda / 100);
             resto %= moeda;
